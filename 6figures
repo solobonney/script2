@@ -1,0 +1,59 @@
+#!/bin/bash
+
+#Description:installation automated
+
+#Author:Solo
+
+#Date:Febuary,2022
+
+echo "you are about to witness an autometd installation"        
+
+sleep 3
+
+sudo yum update -y
+
+sleep 3
+
+sudo yum install java-11-openjdk-devel -y
+
+sleep 3
+
+sudo yum install java-11-openjdk -y
+
+sleep 3
+
+cd /opt
+
+sleep 3
+
+sudo yum install wget -y
+
+sleep 3
+
+sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.3.0.51899.zip
+
+sleep 3
+
+sudo unzip /opt/sonarqube-9.3.0.51899.zip
+
+sleep 3
+
+#!/bin/bash
+sudo chown -R vagrant:vagrant /opt/sonarqube-9.3.0.51899        
+
+sleep 3
+sleep 3
+
+sudo unzip /opt/sonarqube-9.3.0.51899.zip
+
+sleep 3
+
+sudo chown -R vagrant:vagrant /opt/sonarqube-9.3.0.51899        
+
+sleep 3
+
+cd /opt/sonarqube-9.3.0.51899/bin/linux-x86-64
+
+sleep 3
+
+./sonar.sh start
