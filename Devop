@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#Description:Eng.
+
+#Author:Eng
+
+#Date:02/24/2022
+
+echo "I am installing hub"
+
+yum install hub
+
+sleep 3
+
+yum install update
+
+
