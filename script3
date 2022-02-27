@@ -1,0 +1,25 @@
+
+#!/bin/bash
+
+#Description:yum installion
+
+#Author:Mega
+
+#Date:02/22/2022
+
+echo "we are yum installing : "
+
+sleep 4
+
+yum install finger
+
+sleep 3
+
+yum install vim
+
+sleep 3
+
+yum install update
+
+
+
